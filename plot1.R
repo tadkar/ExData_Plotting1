@@ -13,5 +13,7 @@ miniData<-powerData[powerData$Date %in% as.Date(c("2007-02-01","2007-02-02"))]
 
 ##Draw and save the required plot
 hist(miniData$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
+
+## default option is 480x480
 dev.copy(png,"plot1.png")
 dev.off()
