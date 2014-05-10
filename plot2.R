@@ -15,6 +15,7 @@ plot(datetime,miniData$Global_active_power,type="l",xlab="",ylab="Global Active 
 ##plot(datetime,miniData$Global_active_power,type="n",xlab="",ylab="Global Active Power (kilowatts)")
 ##lines(datetime,miniData$Global_active_power)
 
-##Write the output file
+## Write output file
+## default option is 480x480
 dev.copy(png,"plot2.png")
 dev.off()
